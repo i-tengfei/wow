@@ -1,0 +1,21 @@
+{
+	"family": "project",
+	"name": "ndi",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {
+			"seajs": "seajs/seajs/2.1.0/sea"
+		}
+	},
+	"devDependencies": {
+		"grunt": "~0.4.1",
+		"grunt-contrib-qunit": "~0.2.2",
+		"grunt-cmd-transport": "~0.2.9",
+		"grunt-cmd-concat": "~0.2.4",
+		"grunt-contrib-uglify": "~0.2.2",
+		"grunt-contrib-less": "0.6.1",
+		"grunt-contrib-cssmin": "~0.6.1",
+		"grunt-html-build": "~0.2.0",
+		"grunt-contrib-clean": "~0.4.1"
+	}
+}

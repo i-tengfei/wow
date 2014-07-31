@@ -1,0 +1,87 @@
+Effect(Projected_ModMod)
+{
+	FixedFunc()
+	{
+		Pass(2)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+			ColorOp1(Mod);
+			AlphaOp1(Mod);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(Diffuse_Proj_Proj);
+			PixelShader(Combiners_Mod_Mod);
+		}
+	}
+}
+
+Effect(Projected_ModAdd)
+{
+	FixedFunc()
+	{
+		Pass(2)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+			ColorOp1(Add);
+			AlphaOp1(Add);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(Diffuse_Proj_Proj);
+			PixelShader(Combiners_Mod_Add);
+		}
+	}
+}
+
+Effect(Projected_ModMod_Unlit)
+{
+	FixedFunc()
+	{
+		Pass(2)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+			ColorOp1(Mod);
+			AlphaOp1(Mod);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(Color_Proj_Proj);
+			PixelShader(Combiners_Mod_Mod);
+		}
+	}
+}
+
+Effect(Projected_ModAdd_Unlit)
+{
+	FixedFunc()
+	{
+		Pass(2)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+			ColorOp1(Add);
+			AlphaOp1(Add);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(Color_Proj_Proj);
+			PixelShader(Combiners_Mod_Add);
+		}
+	}
+}

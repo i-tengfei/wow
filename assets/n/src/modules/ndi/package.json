@@ -1,0 +1,21 @@
+{
+	"family": "ndi",
+	"name": "ndi",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {
+			"ndi.render": "ndi/render/0.58.0/render",
+			"ndi.render-extend": "ndi/render-extend/0.1.0/render-extend",
+			"ndi.model": "ndi/model/0.1.0/model",
+			"ndi.orbit-camera": "ndi/orbit-camera/0.1.0/orbit-camera",
+			"ndi.math": "ndi/math/0.1.0/math",
+			"ndi.events": "ndi/events/0.1.0/events",
+			"ndi.material": "ndi/material/0.1.0/material",
+			"ndi.map": "ndi/map/0.1.0/map",
+			"ndi.async": "ndi/async/0.2.5/async",
+			"ndi.tween": "ndi/tween/0.10.0/tween",
+			"ndi.mouse-manager": "ndi/mouse-manager/0.1.0/mouse-manager"
+		},
+		"output": ["ndi.js"]
+	}
+}

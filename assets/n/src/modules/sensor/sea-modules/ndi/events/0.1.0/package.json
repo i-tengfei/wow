@@ -1,0 +1,9 @@
+{
+	"family": "ndi",
+	"name": "events",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {},
+		"output": ["events.js"]
+	}
+}

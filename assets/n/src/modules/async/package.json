@@ -1,0 +1,9 @@
+{
+	"family": "ndi",
+	"name": "async",
+	"version": "0.2.5",
+	"spm": {
+		"alias": {},
+		"output": ["async.js"]
+	}
+}

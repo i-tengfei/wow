@@ -1,0 +1,9 @@
+{
+	"family": "ndi",
+	"name": "geometry",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {},
+		"output": ["geometry.js"]
+	}
+}

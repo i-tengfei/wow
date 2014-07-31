@@ -1,0 +1,9 @@
+{
+	"family": "jquery",
+	"name": "jquery",
+	"version": "2.0.2",
+	"spm": {
+		"alias": {},
+		"output": ["jquery.js"]
+	}
+}

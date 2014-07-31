@@ -1,0 +1,12 @@
+{
+	"family": "backbone",
+	"name": "backbone",
+	"version": "1.0.0",
+	"spm": {
+		"alias": {
+			"jquery.jquery" : "jquery/jquery/2.0.2/jquery",
+			"gallery.underscore" : "gallery/underscore/1.4.4/underscore"
+		},
+		"output": ["backbone.js"]
+	}
+}

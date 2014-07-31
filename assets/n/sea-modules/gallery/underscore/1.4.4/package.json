@@ -1,0 +1,9 @@
+{
+	"family": "gallery",
+	"name": "underscore",
+	"version": "1.4.4",
+	"spm": {
+		"alias": {},
+		"output": ["underscore.js"]
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"family": "ndi",
+	"name": "tween",
+	"version": "0.10.0",
+	"spm": {
+		"alias": {},
+		"output": ["tween.js"]
+	}
+}

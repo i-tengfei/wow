@@ -1,0 +1,9 @@
+{
+	"family": "gallery",
+	"name": "dat-gui",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {},
+		"output": ["dat-gui.js"]
+	}
+}

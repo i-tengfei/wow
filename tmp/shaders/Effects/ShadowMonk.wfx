@@ -1,0 +1,79 @@
+Effect(ShadowMonkOpaque)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(ShadowMonk);
+			PixelShader(ShadowMonkOpaque);
+		}
+	}
+}
+
+Effect(AvatarOpaque)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(Avatar);
+			PixelShader(AvatarOpaque);
+		}
+	}
+}
+
+Effect(ShadowMonkTransparent)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(ShadowMonk);
+			PixelShader(ShadowMonkTransparent);
+		}
+	}
+}
+
+Effect(AvatarTransparent)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(Avatar);
+			PixelShader(AvatarTransparent);
+		}
+	}
+}

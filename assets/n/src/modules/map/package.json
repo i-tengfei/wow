@@ -1,0 +1,13 @@
+{
+	"family": "ndi",
+	"name": "map",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {
+			"ndi.render": "ndi/render/0.58.0/render",
+			"ndi.loader" : "ndi/loader/0.1.0/loader",
+			"ndi.math": "ndi/math/0.1.0/math"
+		},
+		"output": ["map.js"]
+	}
+}

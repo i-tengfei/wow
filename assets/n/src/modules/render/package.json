@@ -1,0 +1,9 @@
+{
+	"family": "ndi",
+	"name": "render",
+	"version": "0.62.0",
+	"spm": {
+		"alias": {},
+		"output": ["render.js"]
+	}
+}

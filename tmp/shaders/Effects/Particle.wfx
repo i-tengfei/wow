@@ -1,0 +1,39 @@
+Effect(Particle)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(CDiffuse_T1);
+			PixelShader(Combiners_Mod);
+		}
+	}
+}
+
+Effect(Particle_Unlit)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(Color_T1);
+			PixelShader(Combiners_Mod);
+		}
+	}
+}

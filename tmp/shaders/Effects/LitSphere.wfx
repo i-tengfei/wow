@@ -1,0 +1,39 @@
+Effect(LitSphere_Additive_Transparent)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(LitSphere_T1);
+			PixelShader(LitSphere_Additive_Transparent);
+		}
+	}
+}
+
+Effect(LitSphere_Additive_Opaque)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(Mod);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(LitSphere_T1);
+			PixelShader(LitSphere_Additive_Opaque);
+		}
+	}
+}

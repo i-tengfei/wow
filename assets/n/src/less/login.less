@@ -1,0 +1,268 @@
+@import "common.less";
+
+@shadowDot1: rgba( 0,0,0,.1 );
+@shadowDot2: rgba( 0,0,0,.2 );
+@shadowDot3: rgba( 0,0,0,.3 );
+@shadowDot5: rgba( 0,0,0,.5 );
+
+
+.transition( @data @time @type ){
+	-webkit-transition: @data @time @type;
+	-moz-transition: @data @time @type;
+	-ms-transition: @data @time @type;
+	-o-transition: @data @time @type;
+	transition: @data @time @type;
+}
+.transform( @data ){
+	-webkit-transform: @data;
+	-moz-transform: @data;
+	-ms-transform: @data;
+	-o-transform: @data;
+	transform: @data;
+}
+
+
+body{
+	overflow: hidden;
+}
+
+#message{
+	position: absolute;
+	bottom: 20px;
+	left: 100px;
+	height: 60px;
+	width: 380px;
+	box-shadow: 0 0 5px @shadowDot3;
+	border-radius: 3px;
+	padding: 10px 25px 10px 80px;
+	background: rgba( 255,255,255,.8 );
+	display: none;
+	overflow: hidden;
+}
+#msgBody{
+	float: right;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#msgContent{
+	height: 40px;
+	line-height: 20px;
+	text-indent: 2em;
+	color: #666;
+	margin-top: 2px;
+	margin-bottom: 12px;
+}
+#msgProgress{
+	position: absolute;
+	height: 1px;
+	width: 0;
+	left: 50%;
+	box-shadow: 0 0 3px @shadowDot5;
+}
+#msgProgress span{
+	display: block;
+	height: 100%;
+	width: 50%;
+}
+.msgRed{
+	font-weight: bold;
+	color:#660000;
+}
+
+
+
+
+
+#editor{
+	
+	@width: 400px;
+	@header: 120px;
+	@footer: 36px;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: @width;
+	background: rgba( 255,255,255,.9 );
+	box-shadow: 0 0 5px @shadowDot3;
+	right: -400px;
+	display: none;
+
+	ul, ol, li{
+		margin: 0;
+		padding: 0;
+	}
+	ul li, ol li{
+		list-style: none;
+	}
+
+	#editorShow{
+		position: absolute;
+		left: -70px;
+		top: 10px;
+		width: 60px;
+		height: 26px;
+		line-height: 26px;
+		text-align: center;
+		box-shadow: 0 0 5px @shadowDot3;
+	}
+
+	header{
+		position: absolute;
+		background: #F5F5F5;
+		width: @width - 25;
+		height: @header;
+		padding: 10px 15px 10px 10px;
+		box-shadow: 2px 2px 3px @shadowDot2;
+		z-index: 10;
+
+		#headerBtns{
+			height: 15px;
+			margin-bottom: 10px;
+		}
+
+		#editorName{
+			font-size: 16px;
+			font-weight: bold;
+			color: #505050;
+			width: @width - 105;
+			border: 0;
+			border-bottom: solid #C0C0C0 1px;
+			background: none;
+			padding: 0 20px;
+			margin: 0 20px;
+			height: 34px;
+			line-height: 34px;
+			outline: none;
+
+			&:focus{
+				border-bottom: solid #CC0000 1px;
+			}
+		}
+	}
+
+
+	@borderColor: #DDDDDD;
+
+	.ulBasic{
+		position: absolute;
+		width: @width - 47;
+		top: @header + 20;
+		bottom: @footer + 20;
+		margin: 20px;
+
+		
+		.basic{
+			width: @width - 47;
+			border: solid @borderColor 1px;
+			border-width: 1px 1px 0;
+
+			h3{
+				color: #707070;
+				margin: 0;
+				height: 45px;
+				line-height: 45px;
+				padding: 0 15px;
+				border-bottom: solid @borderColor 1px;
+				background: #ECECEC;
+			}
+
+			input{
+				width: @width - 90;
+				border: 0;
+				outline: none;
+				padding: 5px 10px;
+				margin-left: 50px;
+				background: none;
+			}
+
+			ol{
+
+				.item{
+					border-bottom: solid @borderColor 1px;
+					line-height: 45px;
+					//overflow: hidden;
+
+					h4{
+						padding: 0 15px;
+						height: 45px;
+						margin: 0;
+						border-bottom: solid @borderColor 1px;
+
+						i{
+							float: right;
+							margin-top: 12px;
+						}
+					}
+
+					ul{
+						margin: 15px;
+						border-bottom: solid @borderColor 1px;
+						line-height: 35px;
+						
+						li{
+							border: solid @borderColor 1px;
+							border-width: 1px 1px 0;
+							box-shadow: 0 2px 8px @shadowDot1 inset;
+							overflow: hidden;
+
+							.attrName{
+								float: left;
+								width: 100px;
+								background: #F5F5FF;
+								text-align: center;
+								box-shadow: 0 2px 8px @shadowDot1 inset;
+							}
+							.attrValue{
+								float: right;
+								width: 220px;
+								height: 10px;
+								height: 35px;
+								border-left: solid @borderColor 1px;
+
+								input{
+									margin: 0;
+									padding: 5px 20px;
+									height: 25px;
+									line-height: 25px;
+									width: 180px;
+								}
+							}
+						}
+					}
+
+				}
+			}
+
+		}
+	}
+
+	footer{
+		position: absolute;
+		background: #F5F5F5;
+		width: @width - 25;
+		height: @footer;
+		bottom: 0;
+		padding: 10px 15px 10px 10px;
+		box-shadow: 2px -2px 3px @shadowDot2;
+	}
+
+	.icons{
+		font-size: 14px;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		.transition( -webkit-transform, 0.3s, ease );
+		.transition( -mos-transform, 0.3s, ease );
+		.transition( -mo-transform, 0.3s, ease );
+		.transition( -o-transform, 0.3s, ease );
+		.transition( transform, 0.3s, ease );
+		&:hover{
+			.transform( rotate( 90deg ) )
+		}
+	}
+
+}

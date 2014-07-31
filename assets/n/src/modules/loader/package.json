@@ -1,0 +1,11 @@
+{
+	"family": "ndi",
+	"name": "loader",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {
+			"ndi.events": "ndi/events/0.1.0/events"
+		},
+		"output": ["loader.js"]
+	}
+}

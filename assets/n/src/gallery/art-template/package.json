@@ -1,0 +1,9 @@
+{
+	"family": "gallery",
+	"name": "art-template",
+	"version": "2.0.1",
+	"spm": {
+		"alias": {},
+		"output": ["art-template.js"]
+	}
+}

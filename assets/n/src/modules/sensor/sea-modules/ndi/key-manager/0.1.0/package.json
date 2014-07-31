@@ -1,0 +1,12 @@
+{
+	"family": "ndi",
+	"name": "key-manager",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {
+			"ndi.events": "ndi/events/0.1.0/events",
+			"ndi.event-listener": "ndi/event-listener/0.1.0/event-listener"
+		},
+		"output": ["key-manager.js"]
+	}
+}

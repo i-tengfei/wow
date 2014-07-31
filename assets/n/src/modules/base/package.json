@@ -1,0 +1,9 @@
+{
+	"family": "ndi",
+	"name": "base",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {},
+		"output": ["base.js"]
+	}
+}

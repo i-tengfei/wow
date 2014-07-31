@@ -1,0 +1,12 @@
+{
+	"family": "backbone",
+	"name": "validation",
+	"version": "0.8.1",
+	"spm": {
+		"alias": {
+			"backbone.backbone" : "backbone/backbone/1.0.0/backbone",
+			"gallery.underscore" : "gallery/underscore/1.4.4/underscore"
+		},
+		"output": ["validation.js"]
+	}
+}

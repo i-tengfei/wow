@@ -1,0 +1,9 @@
+{
+	"family": "ndi",
+	"name": "render-extend",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {},
+		"output": ["render-extend.js"]
+	}
+}

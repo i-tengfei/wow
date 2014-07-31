@@ -1,0 +1,280 @@
+Effect(MapObjDiffuse)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod2x);
+			AlphaOp0(Mod);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_T1);
+			PixelShader(MapObjDiffuse);
+		}
+	}
+}
+
+Effect(MapObjOpaque)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod2x);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_T1);
+			PixelShader(MapObjOpaque);
+		}
+	}
+}
+
+Effect(MapObjSpecular)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod2x);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjSpecular_T1);
+			PixelShader(MapObjSpecular);
+		}
+	}
+}
+
+Effect(MapObjMetal)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod2x);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjSpecular_T1);
+			PixelShader(MapObjMetal);
+		}
+	}
+}
+
+Effect(MapObjEnv)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod2x);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_T1_Refl);
+			PixelShader(MapObjEnv);
+		}
+	}
+}
+
+Effect(MapObjEnvMetal)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod2x);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_T1_Refl);
+			PixelShader(MapObjEnvMetal);
+		}
+	}
+}
+
+Effect(MapObjTwoLayerDiffuse)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod2x);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_Comp);
+			PixelShader(MapObjTwoLayerDiffuse);
+		}
+	}
+}
+
+Effect(MapObjTwoLayerEnvMetal)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod2x);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_Comp_Refl);
+			PixelShader(MapObjTwoLayerEnvMetal);
+		}
+	}
+}
+
+Effect(MapObjTwoLayerTerrain)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod2x);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_Comp_Terrain);
+			PixelShader(MapObjTwoLayerTerrain);
+		}
+	}
+}
+
+Effect(MapObjDiffuseEmissive)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod2x);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_Comp);
+			PixelShader(MapObjDiffuseEmissive);
+		}
+	}
+}
+
+Effect(MapObjMaskedEnvMetal)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_T1_Env_T2);
+			PixelShader(MapObjMaskedEnvMetal);
+		}
+	}
+}
+
+Effect(MapObjEnvMetalEmissive)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_T1_Env_T2);
+			PixelShader(MapObjEnvMetalEmissive);
+		}
+	}
+}
+
+Effect(MapObjTwoLayerDiffuseOpaque)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_Comp);
+			PixelShader(MapObjTwoLayerDiffuseOpaque);
+		}
+	}
+}
+
+Effect(MapObjTwoLayerDiffuseEmissive)
+{
+	FixedFunc()
+	{
+		Pass(1)
+		{
+			ColorOp0(Mod2x);
+			AlphaOp0(PassThru);
+		}
+	}
+	Shader()
+	{
+		Pass()
+		{
+			VertexShader(MapObjDiffuse_Comp);
+			PixelShader(MapObjTwoLayerDiffuseEmissive);
+		}
+	}
+}
+

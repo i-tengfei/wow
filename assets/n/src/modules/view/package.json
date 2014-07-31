@@ -1,0 +1,9 @@
+{
+	"family": "ndi",
+	"name": "view",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {},
+		"output": ["view.js"]
+	}
+}

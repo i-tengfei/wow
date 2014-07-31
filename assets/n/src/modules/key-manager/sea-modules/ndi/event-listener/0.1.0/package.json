@@ -1,0 +1,11 @@
+{
+	"family": "ndi",
+	"name": "event-listener",
+	"version": "0.1.0",
+	"spm": {
+		"alias": {
+			"ndi.events" : "ndi/events/0.1.0/events"
+		},
+		"output": ["event-listener.js"]
+	}
+}
